@@ -18,9 +18,12 @@ public class CardReader : MonoBehaviour
 
     [SerializeField]
     private PokemonCard[] _deck;
+
+    private ScoreManager _scoreManager;
     
     void Start()
     {
+        _scoreManager  = FindObjectOfType<ScoreManager>();
         ReadCard(_deck[Random.Range(0,_deck.Length)]);
     }
 
@@ -30,6 +33,7 @@ public class CardReader : MonoBehaviour
         _hpText.text = _currentHp.ToString("000");
         if( _currentHp <= 0 )
         {
+            _scoreManager.RiseScore();
             ReadCard(_deck[Random.Range(0, _deck.Length)]);
         }
     }
