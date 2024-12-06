@@ -1169,7 +1169,7 @@ MonoBehaviour:
   _nameText: {fileID: 1295602736}
   _typeText: {fileID: 143972917}
   _cardImage: {fileID: 257177980}
-  _currentCard: {fileID: 11400000, guid: 6ec935b8fbc4add4782bd40984b87924, type: 2}
+  _currentCard: {fileID: 0}
   _deck:
   - {fileID: 11400000, guid: 7274be039cc989b4889b6c6fda9256a2, type: 2}
   - {fileID: 11400000, guid: ec42d57c94e477f468e0afab703a8885, type: 2}
