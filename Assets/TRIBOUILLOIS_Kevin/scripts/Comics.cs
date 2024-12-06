@@ -9,5 +9,5 @@ public class Comics : ScriptableObject
     public string comicsName;
     public int pageBase;
     public Sprite comicsImage;
-    public int price;
+    public int comicsPrice;
 }

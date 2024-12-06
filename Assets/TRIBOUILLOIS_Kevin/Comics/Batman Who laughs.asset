@@ -15,3 +15,4 @@ MonoBehaviour:
   comicsName: Batman Who Laughs
   pageBase: 45
   comicsImage: {fileID: 21300000, guid: ff0eea0a87fb55748990521303a0a460, type: 3}
+  comicsPrice: 20

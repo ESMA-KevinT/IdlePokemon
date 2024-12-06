@@ -10,6 +10,12 @@ public class MoneyManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI moneyText;
 
+    private ComicsReader cr;
+
+    private void Start()
+    {
+        cr = FindFirstObjectByType<ComicsReader>();
+    }
     public void ChangeMoney(int newMoney)
     {
         _money = newMoney;
@@ -18,6 +24,6 @@ public class MoneyManager : MonoBehaviour
 
     public void RiseMoney()
     {
-        ChangeMoney(_money + 1);
+        ChangeMoney(_money + cr._currentComics.comicsPrice);
     }
 }

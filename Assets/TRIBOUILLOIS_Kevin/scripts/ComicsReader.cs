@@ -9,12 +9,12 @@ public class ComicsReader : MonoBehaviour
 
     private int _currentPage;
     [SerializeField]
-    private TextMeshProUGUI _pageText, _nameText;
+    private TextMeshProUGUI _pageText, _nameText, _priceText;
     [SerializeField]
     private Image _comicsImage;
 
     [SerializeField]
-    private Comics _currentComics;
+    public Comics _currentComics;
 
     [SerializeField]
     private Comics[] _deck;
@@ -46,7 +46,8 @@ public class ComicsReader : MonoBehaviour
 
         _pageText.text = _currentComics.pageBase.ToString("00");
         _nameText.text = _currentComics.comicsName.ToString();
-        
+        _priceText.text = _currentComics.comicsPrice.ToString();
+
 
         _comicsImage.sprite = _currentComics.comicsImage;
 
